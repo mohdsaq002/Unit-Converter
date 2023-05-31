@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #0c0c0c;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(41, 128, 185, 0.5));
+    
+}
+
+.converter {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+}
+
+.converter-heading {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group,
+.output-group {
+    margin-bottom: 10px;
+}
+
+.input-group label,
+.output-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.input-group select,
+.input-group input[type="number"],
+.output-group input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.input-group select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path d="M0 0l5 5 5-5z" fill="%23ffffff"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 10px;
+    padding-right: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.input-group select:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.button-group button {
+    padding: 12px 24px;
+    background-color: #3b604be1;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #656e2cb6;
+}
+
+
+
+.output-group {
+    text-align: center;
+    margin-top: 15px;
+}
+#fromUnit , #toUnit , #inputValue , #outputValue {
+    background-color: rgb(39, 37, 50);
+
+}
